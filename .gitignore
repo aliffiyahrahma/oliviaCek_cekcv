@@ -1,0 +1,18 @@
+/node_modules
+.env
+
+# Python
+venv/
+env/
+__pycache__/
+
+# Upload user
+uploads/
+uploads_pricing/
+
+# Log
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
