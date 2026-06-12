@@ -45,6 +45,10 @@ connection = pymysql.connect(host='localhost',
                              cursorclass=pymysql.cursors.DictCursor)
 app = Flask(__name__)
 
+app.config["SECRET_KEY"] = "iniSecretKeyKu2019"
+app.config['GOOGLE_CLIENT_ID'] = '941372001037-3j38d7coi391g59h1jsqvlikiqb3r2au.apps.googleusercontent.com'
+app.config['GOOGLE_CLIENT_SECRET'] = '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'
+app.config['GOOGLE_DISCOVERY_URL'] = 'https://accounts.google.com/.well-known/openid-configuration'
 
 app.config["SECRET_KEY"] = os .environ.get("SECRET_KEY")
 app.config['GOOGLE_CLIENT_ID'] = os .environ.get("GOOGLE_CLIENT_ID")
